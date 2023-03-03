@@ -9,7 +9,8 @@ server.use(cors());
 
 const PORT = Number(process.env.PORT) || 5000;
 
-server.use(signin)
 server.use(signup)
+server.use(signin)
+
 
 server.listen(PORT,()=>console.log(`Server running on port ${PORT}`));
